@@ -118,7 +118,7 @@ a:hover {
 .hero {
   position: relative;
   height: 60vh;
-  background-image: url('images/hero_bg.png');
+  background: url('hero_bg.png') center/cover no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
