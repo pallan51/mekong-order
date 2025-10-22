@@ -1,0 +1,268 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  line-height: 1.6;
+  /* Light parchment background inspired by the Mekong Order redesign */
+  background-color: #f7f3eb;
+  color: #0b3c2f;
+}
+
+a {
+  color: #0b3c2f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #6b4a31;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Top bar */
+.top-bar {
+  background-color: #f7dfbf;
+  border-bottom: 1px solid #c7a877;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Cinzel', serif;
+}
+
+.top-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.small-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5rem;
+}
+
+.name-tagline {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #0b3c2f;
+}
+
+.mini-tagline {
+  font-size: 0.7rem;
+  color: #4c3724;
+  font-style: italic;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.main-nav a {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #0b3c2f;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover {
+  color: #6b4a31;
+}
+
+.login-btn {
+  display: inline-block;
+  margin-left: 1rem;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #0b3c2f;
+  border-radius: 3px;
+  color: #0b3c2f;
+  font-family: 'Cinzel', serif;
+  font-size: 0.9rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #0b3c2f;
+  color: #f7dfbf;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  height: 60vh;
+  background-image: url('images/hero_bg.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fdf8f1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  font-family: 'Cinzel', serif;
+  padding: 0 1rem;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #f9e6c5;
+}
+
+/* Generic section styling */
+.section {
+  padding: 3rem 0;
+}
+
+.section h2 {
+  font-family: 'Cinzel', serif;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #0b3c2f;
+  position: relative;
+}
+
+.section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #c7a877;
+}
+
+.section p {
+  margin-bottom: 1rem;
+  max-width: 900px;
+  color: #2f261a;
+}
+
+/* Cards section */
+.cards {
+  background-color: #f3ede2;
+  padding: 4rem 0;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #f8f3e9;
+  padding: 2rem;
+  border: 1px solid #e5dac5;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-family: 'Cinzel', serif;
+  color: #0b3c2f;
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #3a2f23;
+}
+
+/* Light background helper */
+.light-bg {
+  background-color: #faf5ec;
+}
+
+/* Events list */
+.events ul {
+  list-style: disc inside;
+  margin-left: 1rem;
+}
+
+.events li {
+  margin-bottom: 0.5rem;
+}
+
+/* Contact */
+ .contact a {
+  color: #0b3c2f;
+  text-decoration: underline;
+ }
+
+ .contact a:hover {
+  color: #6b4a31;
+ }
+
+/* Footer */
+ .site-footer {
+  background-color: #0b3c2f;
+  color: #e8d9b7;
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 2px solid #c7a877;
+  font-size: 0.9rem;
+ }
